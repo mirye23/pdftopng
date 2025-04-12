@@ -45,4 +45,4 @@ def convert():
         return f'변환 중 오류 발생: {str(e)}', 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
