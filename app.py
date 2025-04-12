@@ -45,4 +45,5 @@ def convert():
         return f'변환 중 오류 발생: {str(e)}', 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug = True)
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+
